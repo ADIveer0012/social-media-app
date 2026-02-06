@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feed | Social Media App</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="brand">Social Media App</div>
+
+  <div class="nav-links">
+    <a href="feed.html">🏠 Feed</a>
+    <a href="profile.html">👤 Profile</a>
+    <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+  </div>
+</header>
+
+<!-- ============== CREATE POST BOX ============== -->
+<div class="create-post">
+  <input
+    type="text"
+    id="caption"
+    placeholder="Write a caption..."
+  />
+
+  <input
+    type="text"
+    id="image"
+    placeholder="Paste image URL..."
+  />
+
+  <button onclick="createPost()">Post</button>
+</div>
+
+<!-- ================= FEED ================= -->
+<main class="container" id="feed">
+  <!-- Posts injected by JS -->
+</main>
+
+<!-- ================= SCRIPTS ================= -->
+
+<!-- Auth protection -->
+<script src="js/common.js"></script>
+
+<!-- Feed logic -->
+<script src="js/feed.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Social Media App</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Registration Box -->
+  <main class="auth-box">
+    <h2>Social Media App</h2>
+    <p style="font-size:14px; color:#8e8e8e; margin-bottom:15px;">
+      Sign up to see photos and videos from your friends.
+    </p>
+
+    <input
+      id="username"
+      type="text"
+      placeholder="Username"
+      autocomplete="username"
+      required
+    />
+
+    <input
+      id="email"
+      type="email"
+      placeholder="Email address"
+      autocomplete="email"
+      required
+    />
+
+    <input
+      id="password"
+      type="password"
+      placeholder="Password"
+      autocomplete="new-password"
+      required
+    />
+
+    <button onclick="register()">Sign Up</button>
+
+    <p style="margin-top: 15px; font-size: 14px;">
+      Already have an account?
+      <a href="login.html" style="color:#0095f6; text-decoration:none;">
+        Log in
+      </a>
+    </p>
+  </main>
+
+  <!-- Auth Logic -->
+  <script src="js/auth.js"></script>
+
+</body>
+</html>

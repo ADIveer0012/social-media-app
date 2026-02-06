@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | Social Media App</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="brand">Social Media App</div>
+
+  <div class="nav-links">
+    <a href="feed.html">🏠 Feed</a>
+    <a href="profile.html">👤 Profile</a>
+    <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+  </div>
+</header>
+
+<!-- ================= PROFILE CONTAINER ================= -->
+<main class="container">
+
+  <!-- Profile Header -->
+  <section class="profile-header">
+    <img
+      src="https://i.pravatar.cc/150"
+      alt="Profile Picture"
+      class="profile-pic"
+    />
+
+    <div class="profile-info">
+      <h2 id="username">Username</h2>
+
+      <div class="stats">
+        <div>
+          <span id="posts">0</span>
+          <p>Posts</p>
+        </div>
+
+        <div>
+          <span id="followers">0</span>
+          <p>Followers</p>
+        </div>
+
+        <div>
+          <span id="following">0</span>
+          <p>Following</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= USER POSTS ================= -->
+  <h3 class="section-title">My Posts</h3>
+
+  <section id="user-posts" class="posts-grid">
+    <!-- User posts load here -->
+  </section>
+
+</main>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="js/common.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>
+

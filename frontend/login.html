@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Social Media App</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Login Box -->
+  <main class="auth-box">
+    <h2>Social Media App</h2>
+
+    <input
+      id="username"
+      type="text"
+      placeholder="Username"
+      autocomplete="username"
+      required
+    />
+
+    <input
+      id="password"
+      type="password"
+      placeholder="Password"
+      autocomplete="current-password"
+      required
+    />
+
+    <button onclick="login()">Log In</button>
+
+    <p style="margin-top: 15px; font-size: 14px;">
+      Don’t have an account?
+      <a href="register.html" style="color:#0095f6; text-decoration:none;">
+        Sign up
+      </a>
+    </p>
+  </main>
+
+  <!-- Auth Logic -->
+  <script src="js/auth.js"></script>
+
+</body>
+</html>
